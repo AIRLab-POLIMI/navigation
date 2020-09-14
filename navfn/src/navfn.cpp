@@ -136,8 +136,9 @@ namespace navfn {
     // path buffers
     npathbuf = npath = 0;
     pathx = pathy = NULL;
-    pathStep = 0.5;
-  }
+    pathStep = 1.0;           //original was pathStep = 0.5;   // It has been changed to complete long paths
+                                                               // It is 1.0 pixel  
+   }
 
 
   NavFn::~NavFn()
